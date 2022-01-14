@@ -1,3 +1,5 @@
+// API Utilizada: https://thronesapi.com/
+
 const fetchCharacters = () => {
   // seu código aqui
 };

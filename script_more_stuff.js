@@ -1,3 +1,5 @@
+// API: https://pokeapi.co/
+
 const URL_POKEMONS = 'https://pokeapi.co/api/v2/pokemon';
 
 const fetchData = async (url) => {
