@@ -1,0 +1,23 @@
+{
+  "name": "esquenta_shopping_cart_xp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js",
+    "lint:styles": "stylelint **/*.css --config .stylelintrc.json --ignore-disables --allow-empty-input"
+  },
+  "keywords": [],
+  "author": "Thalles Carneiro",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-trybe-fundamentals": "^1.1.1",
+    "jest": "^27.4.7",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0"
+  }
+}
