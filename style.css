@@ -40,6 +40,12 @@ header {
   margin-left: 50%;
 }
 
+.chars-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .characters {
   display: flex;
   gap: 30px;
@@ -49,6 +55,7 @@ header {
 }
 
 .char {
+  background-color: beige;
   border: 2px solid grey;
   border-radius: 20px;
   box-sizing: border-box;
@@ -58,10 +65,8 @@ header {
   width: 250px;
 }
 
-.char .char__title {
-  padding: 2px;
-  font-size: 14px;
-  text-align: center;
+.char .char__id {
+  display: none;
 }
 
 .char .char__name {
@@ -72,8 +77,19 @@ header {
 }
 
 .char .char__image {
-  height: 84.3%;
+  height: 80%;
   object-fit: fill;
-  border-bottom-right-radius: 18px;
-  border-bottom-left-radius: 18px;
+}
+
+.char .char__add {
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.favorite-characters {
+  width: 30%;
 }

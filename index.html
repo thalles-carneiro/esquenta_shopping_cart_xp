@@ -7,8 +7,11 @@
   <!-- <script src="script_more_stuff.js" defer></script> -->
   <title>Game of Thrones</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="./helpers/fetchQuote.js" defer></script>
+  <script src="./helpers/fetchChar.js" defer></script>
   <script src="./helpers/fetchCharacters.js" defer></script>
+  <script src="./helpers/fetchQuote.js" defer></script>
+  <script src="./helpers/getSavedFavChars.js" defer></script>
+  <script src="./helpers/saveFavChars.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,7 +23,12 @@
       <section class="quote"></section>
       <button class="get-random-quote">Get a new quote!</button>
     </section>
-    <section class="characters"></section>
+    <section class="chars-container">
+      <section class="characters"></section>
+      <section class="favorite-characters">
+        <h2>Favorite Characters:</h2>
+      </section>
+    </section>
   </main>
 </body>
 </html>

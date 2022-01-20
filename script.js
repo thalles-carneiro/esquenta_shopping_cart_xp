@@ -12,15 +12,32 @@ function createCustomElement(element, className, innerText) {
   return e;
 }
 
-function createProductItemElement({ title, fullName, image }) {
+function createCharacterItemElement({ id, fullName, image }) {
   const section = document.createElement('section');
   section.className = 'char';
 
+  section.appendChild(createCustomElement('span', 'char__id', id));
   section.appendChild(createCustomElement('span', 'char__name', fullName));
-  section.appendChild(createCustomElement('span', 'char__title', title));
   section.appendChild(createCharacterImageElement(image));
+  section.appendChild(createCustomElement('button', 'char__add', 'Adicionar aos favoritos!'));
 
   return section;
 }
 
-window.onload = () => { };
+function getIdFromCharacterCard(element) {
+  return element.querySelector('span.char__id').innerText;
+}
+
+function favoriteCharacterClickListener(event) {
+  // coloque seu código aqui
+}
+
+function createFavoriteCharacterElement({ title, name, family }) {
+  const li = document.createElement('li');
+  li.className = 'char__fav';
+  li.innerText = `TITLE: ${title} | NAME: ${name} | FAMILY: ${family}`;
+  li.addEventListener('click', favoriteCharacterClickListener);
+  return li;
+}
+
+window.onload = async () => { };
